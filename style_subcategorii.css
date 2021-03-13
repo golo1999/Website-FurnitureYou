@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(90deg, #CFD6E6, #E7EFF9);
+    font-family: sans-serif;
+}
+
+.containerContinut > .containerSubcategorii{
+    display: flex;
+    flex-direction: column;
+    margin: 15vh 0 0 0;
+}
+
+.containerContinut > .containerSubcategorii > .subcategorie{
+    width: 100%;
+    display: flex;
+    margin: 2.5vmin 0;
+    flex-direction: column;
+    align-items: center;
+}
+
+.containerContinut > .containerSubcategorii > .subcategorie > img{
+    width: 60%;
+    height: auto;
+    margin: 0 5vmin;
+    transition: .6s ease;
+}
+
+.containerContinut > .containerSubcategorii > .subcategorie > img:hover{
+    filter: blur(1px) grayscale(50%);
+}
+
+.containerContinut > .containerSubcategorii > .subcategorie > .detaliiSubcategorie{
+    display: flex;
+    flex-direction: column;
+    margin: 5vmin 0 0 0;
+    width: 100%;
+    align-items: center;
+}
+
+.containerContinut > .containerSubcategorii > .subcategorie > .detaliiSubcategorie > h2{
+    font-family: 'Sansita Swashed', cursive;
+    font-size: 4vmin;
+    margin: 0 0 1vmin 0;
+}
+
+.containerContinut > .containerSubcategorii > .subcategorie > .detaliiSubcategorie > button{
+    padding: 1vh 4vh;
+    font-family: 'Patrick Hand', cursive;
+    background-color: royalblue;
+    border: .2vmin solid transparent;
+    color: white;
+    border-radius: 1vmin;
+    font-size: 4vmin;
+    outline: none;
+    text-align: center;
+    transition: .6s;
+}
+
+.containerContinut > .containerSubcategorii > .subcategorie > .detaliiSubcategorie > button > span{
+    color: white;
+}
+
+.containerContinut > .containerSubcategorii > .subcategorie > .detaliiSubcategorie > button > span > i{
+    font-size: 3vmin;
+}
+
+.containerContinut > .containerSubcategorii > .subcategorie > .detaliiSubcategorie > button:hover{
+    background-color: gold;
+    border-radius: 10vmin;
+    border-color: royalblue;
+    color: royalblue;
+    transform: scale(1.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.containerContinut > .containerSubcategorii > .subcategorie > .detaliiSubcategorie > button:hover > span{
+    color: royalblue;
+}

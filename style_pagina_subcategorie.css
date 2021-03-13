@@ -1,0 +1,95 @@
+.containerContinut{
+    display: flex;
+    flex-direction: column;
+}
+
+.containerContinut > .containerGrid{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto auto;
+    margin: 5vmin 0 0vmin 0;
+}
+
+.containerContinut > .containerGrid > .card{
+    display: flex;
+    flex-direction: column;
+    margin: 2.5vmin 0;
+}
+
+.containerContinut > .containerGrid > .card.stanga{    
+    padding: 0 2.5vmin 0 5vmin;
+}
+
+.containerContinut > .containerGrid > .card.dreapta{
+    padding: 0 5vmin 0 2.5vmin;
+}
+
+.containerContinut > .containerGrid > .card > img{
+    width: 100%;
+    height: 50vmin;
+    object-fit: cover;
+    transition: .6s ease;
+}
+
+.containerContinut > .containerGrid > .card > img:hover{
+    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+    transform: rotate(1deg);
+}
+
+.containerContinut > .containerGrid > .card > .detaliiCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerContinut > .containerGrid > .card > .detaliiCard > h3{
+    text-align: center;
+    font-family: 'Sansita Swashed', cursive;
+    font-size: 2vmin;
+    margin: 1vmin 0 0 0;
+    color: royalblue;
+}
+
+.containerContinut > .containerGrid > .card > .detaliiCard > p{
+    font-size: 3vmin;
+    font-family: 'Patrick Hand', cursive;
+}
+
+.containerContinut > .containerGrid > .card > .detaliiCard > p.reducere > span:first-child{
+    color: #990011;
+    font-weight: bold;
+    font-size: 4vmin;
+}
+
+.containerContinut > .containerGrid > .card > .detaliiCard > p.reducere > span:nth-child(2){
+    text-decoration: line-through;
+}
+
+@media screen and (max-width: 900px)
+{
+    .containerContinut > .containerGrid{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .containerContinut > .containerGrid > .card{
+        margin: 2.5vmin 5vmin;
+    }
+
+    .containerContinut > .containerGrid > .card.card.stanga, .containerContinut > .containerGrid > .card.card.dreapta{
+        padding: 0;
+    }
+
+    .containerContinut > .containerGrid > .card > img{
+        height: 60vh;
+    }
+
+    .containerContinut > .containerGrid > .card > .detaliiCard > h3{
+        font-size: 3vmin;
+    }
+
+    .containerContinut > .containerGrid > .card > .detaliiCard > p{
+        font-size: 4vmin;
+    }
+}

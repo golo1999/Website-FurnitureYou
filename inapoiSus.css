@@ -1,0 +1,19 @@
+.containerContinut > .mergiSus{
+    background-color: #990011;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vmin;
+    padding: 1vmin 0;
+    color: white;
+    margin-top: 5vmin;
+    cursor: pointer;
+}
+
+.containerContinut > .mergiSus > h2{
+    font-family: 'Sansita Swashed', cursive;
+}
+
+.containerContinut > .mergiSus > h2 > span{
+    margin: 0 1vmin;
+}

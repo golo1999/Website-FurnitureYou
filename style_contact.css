@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.containerContinut{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(#141e30, #243b55);
+}
+
+.containerContinut > .containerFormular{
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerContinut > .containerFormular > .formular > form{
+    display: flex;
+    flex-direction: column;
+}
+
+.containerContinut > .containerFormular > .formular > form > input:not(:last-child), .containerContinut > .containerFormular > .formular > form > textarea{
+    border: .3vmin solid salmon;
+    margin: 1vmin 0;
+    background: none;
+    border-radius: 1vmin;
+    padding: 2vmin 1vmin;
+    outline: none;
+    color: silver;
+    font-size: 2vmin;
+    transition: .6s ease;
+    font-family: 'Syne Mono', monospace;
+    cursor: pointer;
+}
+
+.containerContinut > .containerFormular > .formular > form > input:not(:last-child):hover, .containerContinut > .containerFormular > .formular > form > textarea:hover{
+    border-color: gold;
+    color: gold;
+    transform: rotate(1deg);
+}
+
+.containerContinut > .containerFormular > .formular > form > input:not(:last-child)::placeholder, .containerContinut > .containerFormular > .formular > form > textarea::placeholder{
+    color: silver;
+    font-size: 2vmin;
+}
+
+.containerContinut > .containerFormular > .formular > form > input:not(:last-child):hover::placeholder, .containerContinut > .containerFormular > .formular > form > textarea:hover::placeholder{
+    color: gold;
+}
+
+.containerContinut > .containerFormular > .formular > form > input:last-child{
+    background-color: salmon;
+    color: #614051;
+    font-size: 2.5vmin;
+    text-transform: uppercase;
+    padding: 1vmin 0;
+    border-radius: 1vmin;
+    font-weight: bold;
+    margin-top: 1vmin;
+    font-family: 'Patrick Hand', cursive;
+    border: .3vmin solid transparent;
+    transition: .6s ease;
+    cursor: pointer;
+}
+
+.containerContinut > .containerFormular > .formular > form > input:last-child:hover{
+    background: none;
+    color: gold;
+    border-color: gold;
+}
+
+.containerContinut > .containerInformatiiContact{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerContinut > .containerInformatiiContact > img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: scaleX(-1);
+    width: 25%;
+    height: auto;
+}
+
+.containerContinut > .containerInformatiiContact > .informatiiContact{
+    display: flex;
+    flex-direction: column;
+}
+
+.containerContinut > .containerInformatiiContact > .informatiiContact > div{
+    display: flex;
+    flex-direction: column;
+    margin: 1vmin 0;
+}
+
+.containerContinut > .containerInformatiiContact > .informatiiContact > div > span{
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+
+.containerContinut > .containerInformatiiContact > .informatiiContact > div > span > i, .containerContinut > .containerInformatiiContact > .informatiiContact > div > span > h3{
+    font-size: 3vmin;
+}
+
+.containerContinut > .containerInformatiiContact > .informatiiContact > div > span > i{
+    margin: 0 .5vmin;
+}
+
+.containerContinut > .containerInformatiiContact > .informatiiContact > div > span > h3{
+    margin: 0 .5vmin;
+    font-family: 'Sansita Swashed', cursive;
+    transition: .6s ease;
+    cursor: pointer;
+}
+
+.containerContinut > .containerInformatiiContact > .informatiiContact > div > span > h3:hover{
+    color: gold;
+}
+
+.containerContinut > .containerInformatiiContact > .informatiiContact > div > p{
+    font-size: 2vmin;
+    font-family: 'Syne Mono', monospace;
+}
+
+.containerContinut > .containerInformatiiContact > .informatiiContact > div:first-child > p{
+    color: silver;
+}
+
+.containerContinut > .containerInformatiiContact > .informatiiContact > div:not(:first-child) > p{
+    color: mediumseagreen;
+}
